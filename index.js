@@ -1,5 +1,9 @@
+  /*
+  Drag/Drop Function
+*/  
 $(function() {
     console.log("document ready");
+	 
 	$( "#tabs" ).tabs();
 	var html = $("html").html();
 		
@@ -20,10 +24,11 @@ $(function() {
 		$( ".droppedFields" ).sortable();
 		$( ".droppedFields" ).disableSelection();
 		
-		
-		
   });
   
+  /*
+  Preview Function
+*/  
    function preview() {
                 console.log('Preview clicked');
                 
@@ -64,6 +69,9 @@ $(function() {
 				
         }
 		
+		
+		
+ 		
 		
 	
 		
