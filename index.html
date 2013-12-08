@@ -1,35 +1,119 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-<link href="../index.css" rel="stylesheet" type="text/css">
+<title>jQuery UI Tabs - Default functionality</title>
+<link href="new.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="new.js"></script>
 </head>
-
 <body>
-
-<div class="container">
-  <div class="header"><a href="#"><img src="" alt="Insert Logo Here" name="Insert_logo" width="180" height="90" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a> 
-    <!-- end .header --></div>
-  <div class="sidebar1">
-    <ul class="nav">
-      <li><a href="#">Link one</a></li>
-      <li><a href="#">Link two</a></li>
-      <li><a href="#">Link three</a></li>
-      <li><a href="#">Link four</a></li>
-    </ul>
-    
-    
-    <!-- end .sidebar1 --></div>
-  <div class="content">
-    
-    <!-- end .content --></div>
-  <div class="sidebar2">
-    
-    <!-- end .sidebar2 --></div>
-    <div class="footer">
-    <p>Footer</p>
-    <!-- endzzz .footer --></div>
-  <!-- end .container --></div>
+<div id="containerTable">
+<h1>Form Generator</h1>
+<div id="tabs" class="inputtabWidth">
+  <ul>
+    <li><a href="#tabs-1">Simple input</a></li>
+    <li><a href="#tabs-2">Radio/Checkbox/List</a></li>
+    <li><a href="#tabs-3">Buttons</a></li>
+  </ul>
+  <div id="tabs-1">
+    <div class='selectorField draggableField'>
+      <label class="control-label">Text Input</label>
+      <input type="text" placeholder="Text here...">
+    </div>
+    <div class='selectorField draggableField'>
+      <label class="control-label">Password</label>
+      <input type="password" placeholder="Password...">
+    </div>
+    <div class='selectorField draggableField'>
+      <label class="control-label">Combobox</label>
+      <select>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+    </div>
+  </div>
+  <div id="tabs-2">
+    <div class='selectorField draggableField radiogroup'>
+      <label class="control-label">Radio buttons</label>
+      <div>
+        <label class="radio">
+          <input type="radio" name="radioField" value="option1">
+          Option 1
+          
+        </label>
+        <label class="radio">
+          <input type="radio" name="radioField" value="option2">
+          Option 2
+        
+        </label>
+        <label class="radio">
+          <input type="radio" name="radioField" value="option3">
+          Option 3
+        
+        </label>
+      </div>
+    </div>
+    <div class='selectorField draggableField checkboxgroup' >
+      <label class="control-label">Checkboxes</label>
+      <div>
+        <label class="checkbox">
+          <input type="checkbox" name="checkboxField" value="option1">
+          Option 1
+         
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="checkboxField" value="option2">
+          Option 2
+         
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="checkboxField" value="option3">
+          Option 3
+         
+        </label>
+      </div>
+    </div>
+    <div class='selectorField draggableField selectmultiple'>
+      <label class="control-label">Select multiple</label>
+      <div>
+        <select multiple="multiple">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div id="tabs-3">
+    <div class='selectorField draggableField'>
+      <button>Simple Button</button>
+    </div>
+    <div class='selectorField draggableField'>
+      <button>Primary Button</button>
+    </div>
+    <div class='selectorField draggableField'>
+      <button> Save Button</button>
+    </div>
+    <div class='selectorField draggableField'>
+      <button>Delete Button</button>
+    </div>
+  </div>
+</div>
+<div class="droppedFieldsColumn" id ="selected-content">
+			<div class="droppedFields"></div>
+		</div>
+<div class="tableFooter">
+				<input type="button" value="Preview" onclick="preview();"></input>
+                
+		
+                
+		</div>
+ 
+</div>
+</div>
 </body>
 </html>
