@@ -2,117 +2,117 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>jQuery UI Tabs - Default functionality</title>
-<link href="new.css" rel="stylesheet" type="text/css">
+<title>Form Generator</title>
+<link href="index.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script type="text/javascript" src="new.js"></script>
+<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 <div id="containerTable">
-<h1>Form Generator</h1>
-<div id="tabs" class="inputtabWidth">
-  <ul>
-    <li><a href="#tabs-1">Simple input</a></li>
-    <li><a href="#tabs-2">Radio/Checkbox/List</a></li>
-    <li><a href="#tabs-3">Buttons</a></li>
-  </ul>
-  <div id="tabs-1">
-    <div class='selectorField draggableField'>
-      <label class="control-label">Text Input</label>
-      <input type="text" placeholder="Text here...">
+  <h1>Form Generator</h1>
+  <div id="tabs" class="inputtabWidth">
+    <div class="ui-widget-header">
+      <p>Drag required fields</p>
     </div>
-    <div class='selectorField draggableField'>
-      <label class="control-label">Password</label>
-      <input type="password" placeholder="Password...">
-    </div>
-    <div class='selectorField draggableField'>
-      <label class="control-label">Combobox</label>
-      <select>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-      </select>
-    </div>
-  </div>
-  <div id="tabs-2">
-    <div class='selectorField draggableField radiogroup'>
-      <label class="control-label">Radio buttons</label>
-      <div>
-        <label class="radio">
-          <input type="radio" name="radioField" value="option1">
-          Option 1
-          
-        </label>
-        <label class="radio">
-          <input type="radio" name="radioField" value="option2">
-          Option 2
-        
-        </label>
-        <label class="radio">
-          <input type="radio" name="radioField" value="option3">
-          Option 3
-        
-        </label>
+    <ul>
+      <li><a href="#tabs-1">Input Boxes</a></li>
+      <li><a href="#tabs-2">Radio/Checkbox/List</a></li>
+      <li><a href="#tabs-3">Buttons</a></li>
+    </ul>
+    <div id="tabs-1">
+      <div class='selectorField draggableField'>
+        <label>Name</label>
+        <input type="text" placeholder="Name here...">
+      </div>
+      <div class='selectorField draggableField'>
+        <label>Password</label>
+        <input type="password" placeholder="Password here...">
+      </div>
+      <div class='selectorField draggableField'>
+        <label>Password</label>
+        <input type="tel" placeholder="phone here...">
+      </div>
+      <div class='selectorField draggableField'>
+        <label>Textarea</label>
+        <textarea placeholder="Text here..."></textarea>
       </div>
     </div>
-    <div class='selectorField draggableField checkboxgroup' >
-      <label class="control-label">Checkboxes</label>
-      <div>
-        <label class="checkbox">
-          <input type="checkbox" name="checkboxField" value="option1">
-          Option 1
-         
-        </label>
-        <label class="checkbox">
-          <input type="checkbox" name="checkboxField" value="option2">
-          Option 2
-         
-        </label>
-        <label class="checkbox">
-          <input type="checkbox" name="checkboxField" value="option3">
-          Option 3
-         
-        </label>
-      </div>
-    </div>
-    <div class='selectorField draggableField selectmultiple'>
-      <label class="control-label">Select multiple</label>
-      <div>
-        <select multiple="multiple">
+    <div id="tabs-2">
+      <div class='selectorField draggableField'>
+        <label>Options</label>
+        <select>
           <option value="option1">Option 1</option>
           <option value="option2">Option 2</option>
           <option value="option3">Option 3</option>
         </select>
       </div>
+      <div class='selectorField draggableField'>
+        <label>Radio buttons</label>
+        <div>
+          <label class="radio">
+            <input type="radio" name="radioField" value="option1">
+            Option 1<br>
+          </label>
+          <label class="radio">
+            <input type="radio" name="radioField" value="option2">
+            Option 2<br>
+          </label>
+          <label class="radio">
+            <input type="radio" name="radioField" value="option3">
+            Option 3 </label>
+        </div>
+      </div>
+      <div class='selectorField draggableField' >
+        <label>Checkboxes</label>
+        <div>
+          <label class="checkbox">
+            <input type="checkbox" name="checkboxField" value="option1">
+            Option 1<br>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="checkboxField" value="option2">
+            Option 2<br>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="checkboxField" value="option3">
+            Option 3 </label>
+        </div>
+      </div>
+      <div class='selectorField draggableField'>
+        <label>Select multiple</label>
+        <div>
+          <select multiple="multiple">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="tabs-3">
+      <div class='selectorField draggableField'>
+        <input type="submit">
+      </div>
+      <div class='selectorField draggableField'>
+        <input type="reset">
+      </div>
+      <div class='selectorField draggableField'>
+        <input type="file">
+      </div>
     </div>
   </div>
-  <div id="tabs-3">
-    <div class='selectorField draggableField'>
-      <button>Simple Button</button>
+  <div class="droppedFieldsColumn" id ="selected-content">
+    <div class="ui-widget-header">
+      <p>Drop fields here</p>
     </div>
-    <div class='selectorField draggableField'>
-      <button>Primary Button</button>
-    </div>
-    <div class='selectorField draggableField'>
-      <button> Save Button</button>
-    </div>
-    <div class='selectorField draggableField'>
-      <button>Delete Button</button>
-    </div>
+    <div class="droppedFields"></div>
   </div>
-</div>
-<div class="droppedFieldsColumn" id ="selected-content">
-			<div class="droppedFields"></div>
-		</div>
-<div class="tableFooter">
-				<input type="button" value="Preview" onclick="preview();"></input>
-                
-		
-                
-		</div>
- 
+  <div class="tableFooter">
+    <input type="button" value="Preview" onclick="preview();">
+    </input>
+  </div>
 </div>
 </div>
 </body>

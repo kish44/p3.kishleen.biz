@@ -1,62 +1,56 @@
 @charset "utf-8";
 /* CSS Document */
+body {
+	background-color: #FFF;
+	text-align:center;
+	
+}
+
+p {
+	padding-left: 10px;
+}
 
 .inputtabWidth {
-	width: 600px;
 	float: left;
 }
 
 .selectorField {
 	border: 1px dotted;
-	width:  190px;
+	width:  250px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 5px;
 }
 
-
-
-.outputTab {
-	border: 1px solid;
-	margin: 0;
-	float: left;
-	width: 200px;
-	height: 200px;
-}
-
 .droppedFieldsColumn {
-		margin: 0;
-		float: left;
-		height: 400px;
-	}
+	margin: 10px;
+	float: left;
+		
+}
 	
-	.droppedFields {
-		border: 1px solid;
-		margin: 0;
-		float: left;
-		width: 200px;
-		height: 400px;
-	}
+.droppedFields {
+	border: 1px solid;
+	margin: 10px;
+	float: left;
+	width: 300px;
+	min-height:400px;
+}
 
 .tableFooter {
 	clear:both;
 	width: 200px;
 	margin-top:50%;
 }
+	
 
-		
+.draggableField {
+	/* float: left; */
+	padding-left:5px;
+	margin: 10px;
+}
 
-                .draggableField {
-                        /* float: left; */
-                        padding-left:5px;
-                }
-                
-                .draggableField > input,select, button, .checkboxgroup, .selectmultiple, .radiogroup {
-                        margin: 10px;
-                }
-
-                .draggableField:hover{
-                        background-color: #666;
-                }
+.draggableField:hover{
+	background-color: #666;
+}
 
 
